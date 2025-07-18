@@ -7,7 +7,7 @@ import type { ResolvedOptions } from "./options";
 export async function create(options: ResolvedOptions): Promise<void> {
 	// Clone the template from the repository
 	await downloadTemplate(
-		`gh:gugustinette/create-fibbo/templates/${options.template}`,
+		`gh:fibbojs/create-fibbo/templates/${options.template}`,
 		{
 			dir: options.name,
 		},
