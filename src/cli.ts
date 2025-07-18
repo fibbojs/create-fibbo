@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import process from "node:process";
 import { intro, log, outro, spinner } from "@clack/prompts";
 import { green, underline } from "ansis";
