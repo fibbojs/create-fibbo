@@ -1,6 +1,6 @@
 {
 	"name": "create-fibbo",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "The recommended way to create a new Fibbo application",
 	"type": "module",
 	"license": "MIT",
