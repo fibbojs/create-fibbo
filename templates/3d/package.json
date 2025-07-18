@@ -1,0 +1,23 @@
+{
+  "name": "starter-3d",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "author": "John Doe <john.doe@fibbo.js>",
+  "homepage": "https://johndoe.github.io/starter-3d",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johndoe/starter-3d.git"
+  },
+  "bugs": "https://github.com/johndoe/starter-3d/issues",
+  "scripts": {
+    "dev": "fibbo dev",
+    "build": "fibbo build"
+  },
+  "devDependencies": {
+    "@fibbojs/3d": "^0.0.20",
+    "@fibbojs/devtools": "^0.0.20",
+    "@fibbojs/event": "^0.0.20",
+    "fibbo": "^0.0.20"
+  }
+}

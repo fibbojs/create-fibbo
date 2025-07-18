@@ -1,0 +1,59 @@
+{
+	"name": "create-fibbo",
+	"version": "0.0.1",
+	"description": "The recommended way to create a new Fibbo application",
+	"type": "module",
+	"license": "MIT",
+	"homepage": "https://github.com/gugustinette/create-fibbo#readme",
+	"bugs": {
+		"url": "https://github.com/gugustinette/create-fibbo/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gugustinette/create-fibbo.git"
+	},
+	"author": "Augustin Mercier <mercier.augustin@proton.me>",
+	"funding": "https://github.com/sponsors/gugustinette",
+	"files": [
+		"dist"
+	],
+	"main": "./dist/cli.js",
+	"module": "./dist/cli.js",
+	"types": "./dist/cli.d.ts",
+	"exports": {
+		".": "./dist/cli.js",
+		"./package.json": "./package.json"
+	},
+	"typesVersions": {
+		"*": {
+			"*": [
+				"./dist/*",
+				"./*"
+			]
+		}
+	},
+	"bin": {
+		"create-fibbo": "./dist/cli.js"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "tsdown",
+		"dev": "npm run build && clear && node ./dist/cli.js",
+		"check": "biome check",
+		"check:fix": "biome check --write",
+		"check:fix:unsafe": "biome check --write --unsafe"
+	},
+	"dependencies": {
+		"@clack/prompts": "^0.11.0",
+		"ansis": "^4.1.0",
+		"cac": "^6.7.14",
+		"giget": "^2.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.1.2",
+		"@types/node": "^24.0.14",
+		"tsdown": "^0.12.9"
+	}
+}

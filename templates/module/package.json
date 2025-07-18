@@ -1,0 +1,49 @@
+{
+  "name": "starter-module",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "My custom module for Fibbo",
+  "author": "John Doe <john.doe@fibbo.js>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://johndoe.github.io/starter-module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johndoe/starter-module.git"
+  },
+  "bugs": "https://github.com/johndoe/starter-module/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/types/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "cd playground && fibbo dev",
+    "build": "tsdown"
+  },
+  "dependencies": {
+    "@fibbojs/3d": "^0.0.20",
+    "@fibbojs/devtools": "^0.0.20",
+    "@fibbojs/event": "^0.0.20",
+    "fibbo": "^0.0.20"
+  },
+  "devDependencies": {
+    "tsdown": "^0.12.9"
+  }
+}

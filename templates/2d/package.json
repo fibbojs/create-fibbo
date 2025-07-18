@@ -1,0 +1,23 @@
+{
+  "name": "starter-2d",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "author": "John Doe <john.doe@fibbo.js>",
+  "homepage": "https://johndoe.github.io/starter-2d",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johndoe/starter-2d.git"
+  },
+  "bugs": "https://github.com/johndoe/starter-2d/issues",
+  "scripts": {
+    "dev": "fibbo dev",
+    "build": "fibbo build"
+  },
+  "devDependencies": {
+    "@fibbojs/2d": "^0.0.20",
+    "@fibbojs/devtools": "^0.0.20",
+    "@fibbojs/event": "^0.0.20",
+    "fibbo": "^0.0.20"
+  }
+}
